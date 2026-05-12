@@ -21,30 +21,28 @@ void Inversion_HW()
 {
 	const char hw[13] = "Hello World!";
 
+	//	int hw_size = sizeof(hw);
+
 	for (int count = 0; count < 20; count++)
 	{
+		std::cout << count + 1 << " : ";
+
 		if (count % 2 == 0)
 		{
-		//	int hw_size = sizeof(hw);
-
-			std::cout << count + 1 << " : ";
 			for (int char_num = 0; char_num < 13; char_num++)
 			{
 				std::cout << hw[char_num];
 			}
-			std::cout << std::endl;
 		}
 		else
 		{
-		//	int hw_size = sizeof(hw);
-
-			std::cout << count + 1 << " : ";
 			for (int char_num = 12; char_num >= 0; char_num--)
 			{
 				std::cout << hw[char_num];
 			}
-			std::cout << std::endl;
 		}
+
+		std::cout << std::endl;
 	}
 }
 
