@@ -1,10 +1,14 @@
 ﻿
 #include <iostream>
 
-int main()
+void Cout_HW_100()
 {
-    std::cout << "Hello World!\n";
+	for (int count = 0; count < 100; count++) {
+		std::cout << count + 1 << " : Hello World!\n";
+	}
 }
 
-
-// test
+int main()
+{
+	Cout_HW_100();
+}
