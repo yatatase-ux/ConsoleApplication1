@@ -20,14 +20,15 @@ void Cout_HW_100_while()
 void Reverse_HW()
 {
 	const char hw[13] = "Hello World!";
-
 	//	int hw_size = sizeof(hw);
 
-	for (int count = 0; count < 20; count++)
-	{
-		std::cout << count + 1 << " : ";
+	int count = 20;
 
-		if (count % 2 == 0)
+	while (count--)
+	{
+		std::cout << 20 - count << " : ";
+
+		if (count % 2)
 		{
 			for (int char_num = 0; char_num < 13; char_num++)
 			{
@@ -44,6 +45,7 @@ void Reverse_HW()
 
 		std::cout << std::endl;
 	}
+
 }
 
 void Reverse_exam()
@@ -74,7 +76,7 @@ int main()
 
 //	Cout_HW_100_while();
 
-//	Reverse_HW();
+	Reverse_HW();
 
-	Reverse_exam();
+//	Reverse_exam();
 }
