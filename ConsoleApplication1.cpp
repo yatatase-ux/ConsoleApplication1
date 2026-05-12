@@ -17,7 +17,7 @@ void Cout_HW_100_while()
 	}
 }
 
-void Inversion_HW()
+void Reverse_HW()
 {
 	const char hw[13] = "Hello World!";
 
@@ -46,11 +46,35 @@ void Inversion_HW()
 	}
 }
 
+void Reverse_exam()
+{
+	auto forward = std::string("Hello World!");
+	auto reverse = forward;
+
+	std::reverse(reverse.begin(), reverse.end()); 
+
+	auto i = 10;
+
+	while (i--)
+	{
+		if (i & 1)
+		{
+			std::cout << reverse << std::endl;
+		}
+		else
+		{
+			std::cout << forward << std::endl;
+		}
+	}
+}
+
 int main()
 {
 //	Cout_HW_100_for();
 
 //	Cout_HW_100_while();
 
-	Inversion_HW();
+//	Reverse_HW();
+
+	Reverse_exam();
 }
